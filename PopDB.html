@@ -34,7 +34,7 @@ CARDTITLE<i class='material-icons right'>close</i>
     
     var i;
     for (i = 0; i < res.length; i++) {
-     $( "#cardspot" ).before( cardHTML.replace("CARDTITLE",res[i]) );
+     $( "#cardspot" ).before( cardHTML.replaceAll("CARDTITLE",res[i]) );
     }
     
     
