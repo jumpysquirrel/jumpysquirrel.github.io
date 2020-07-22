@@ -17,7 +17,15 @@
 
        
   $(function() {
-    $( "#cardspot" ).after( cardHTML );
+    
+    var res = taskerVariable.split("|");
+    
+    var i;
+    for (i = 0; i < res.length; i++) {
+     $( "#cardspot" ).after( cardHTML );
+    }
+    
+    
 });
     </script>
     <body>
